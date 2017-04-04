@@ -23,7 +23,7 @@ $(document).ready(function(){
 			totalVal += curPrice;
 			date = new Date(product.created_at);
 
-			html += "<tr><td>"+product.product_name+"</td><td>"+product.product_qty+"</td><td>"+product.product_price+"</td><td>"+((date.getMonth()+1)+"/"+date.getDate()+"/"+date.getFullYear())+"</td><td>"+(curPrice)+"</td></tr>";
+			html += "<tr><td>"+product.product_name+"</td><td>"+product.product_qty+"</td><td>"+product.product_price+"</td><td>"+((date.getMonth()+1)+"/"+date.getDate()+"/"+date.getFullYear()+" "+date.getHours()+":"+date.getMinutes())+"</td><td>"+(curPrice)+"</td></tr>";
 
 		});
 

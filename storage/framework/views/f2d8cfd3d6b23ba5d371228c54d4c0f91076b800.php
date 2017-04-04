@@ -29,7 +29,7 @@
           <td><?php echo e($p->product_name); ?></td>
           <td><?php echo e($p->product_qty); ?></td>
           <td><?php echo e($p->product_price); ?></td>
-          <td><?php echo e(date('n/j/Y',strtotime($p->created_at))); ?></td>
+          <td><?php echo e(date('n/j/Y H:i',strtotime($p->created_at))); ?></td>
           <td><?php echo e($cur_price); ?></td>
         </tr>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

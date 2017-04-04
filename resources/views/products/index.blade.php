@@ -29,7 +29,7 @@
           <td>{{$p->product_name}}</td>
           <td>{{$p->product_qty}}</td>
           <td>{{$p->product_price}}</td>
-          <td>{{date('n/j/Y',strtotime($p->created_at))}}</td>
+          <td>{{date('n/j/Y H:i',strtotime($p->created_at))}}</td>
           <td>{{$cur_price}}</td>
         </tr>
         @endforeach
